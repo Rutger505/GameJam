@@ -9,7 +9,7 @@ try {
 
  
 	draw_set_font(fntLarge);
-    draw_text_transformed(x, y, display_text, 0.25, 0.25, image_angle);
+    draw_text_transformed(x, y, display_text, 0.5, 0.5, image_angle);
 }
 catch(error) {
 }

@@ -1,7 +1,7 @@
 // Configuration ###########################
 var playerObject = oPlayer; 
 var objectToPlace = oEnemy;
-var antiSpawnArea = 300;
+var antiSpawnArea = 200;
 var spaceBetweenBorder = 15;
 var objectsPerWave = [1, 2, 3, 4, 5];
 
