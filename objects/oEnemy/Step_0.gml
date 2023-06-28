@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (dead) {
-	sprite_index = sEnemyDead;
+	sprite_index = Clock_Dead_Sprite;
 	speed = 0;
 } else {
 	direction = point_direction(x, y, oPlayer.x, oPlayer.y);

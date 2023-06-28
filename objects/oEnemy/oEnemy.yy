@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sEnemy_strip7",
-    "path": "sprites/sEnemy_strip7/sEnemy_strip7.yy",
+    "name": "Clock_Sprite",
+    "path": "sprites/Clock_Sprite/Clock_Sprite.yy",
   },
   "spriteMaskId": null,
   "visible": true,

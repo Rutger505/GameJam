@@ -1,3 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-display_text = "";
+
+// Inherit the parent event
+event_inherited();
+
+game_end(); exit;

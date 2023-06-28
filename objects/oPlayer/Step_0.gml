@@ -1,24 +1,45 @@
-/// @description Insert description here
-// You can write your code in this editor
 var xMove = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var yMove = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
  
 
+var newXMove = xMove;
+var newYMove = yMove;
+
+ 
+
 if (xMove != 0 || yMove != 0) {
-    sprite_index = sPlayerRun_strip7;
+    sprite_index = Player;
 } else {
-    sprite_index = sPlayerIdle_strip4;
+    sprite_index = Player;
 }
 
  
 
-if (xMove != 0) image_xscale = xMove;
+image_xscale = 1;
 
  
 
-x += xMove * spd;
-y += yMove * spd;
+// Check collision with oBorder
+var horizontalCollision = place_meeting(x + xMove * spd, y, oBorder);
+var verticalCollision = place_meeting(x, y + yMove * spd, oBorder);
+
+ 
+
+if (horizontalCollision) {
+    newXMove = 0;
+}
+
+ 
+
+if (verticalCollision) {
+    newYMove = 0;
+}
+
+ 
+
+x += newXMove * spd;
+y += newYMove * spd;
 
  
 
